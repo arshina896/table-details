@@ -1,6 +1,6 @@
 $(document).ready(function () {
   let table = $('#myTable').DataTable();
-  $.get("../assets/js/MOCK_DATA.json", function (res, xhr) {
+  $.get('../assets/js/MOCK_DATA.json', function (res, xhr) {
     res.forEach((item) => {
       table.row.add([
         item.first_name,
